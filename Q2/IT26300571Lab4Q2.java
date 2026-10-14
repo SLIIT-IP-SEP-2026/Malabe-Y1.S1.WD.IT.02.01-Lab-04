@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class IT26300571Lab4Q2 {
+	public static void main(String[]args){
+	 
+	  Scanner input = new Scanner(System.in);
+	  
+	  System.out.println( " Please enter the exam marks (out of 100 ) : ");
+	  double exam = input.nextDouble();
+	  
+	  if (exam < 0 || exam > 100) {
+		  System.out.println(" Invalid inputs for exam marks. Terminating the program");
+		  return;
+	  }
+		  
+		  System.out.println( " Please enter the lab marks ( out of 100 ): ");
+		  double lab = input.nextDouble();
+		  
+		  if ( lab < 0 || lab > 100 ){
+			  System.out.println( " Invalid inputs for lab marks. Terminating the program ");
+			  return;
+		  }
+			  
+			  System.out.println( " Please enter the Exam Percentage " );
+			   double exPct = input.nextDouble();
+			   
+			   if ( exPct < 0 || exPct > 0) {
+				 System.out.println(" Invalid inputs for Exam Percentage. Terminating the program");  
+				 return;
+			   }
+				 
+				 			  System.out.println( " Please enter the Lab Percentage " );
+			                  double lbPct = input.nextDouble();
+							  
+							   if ( exPct + lbPct != 100 ) {
+				               System.out.println(" Invalid inputs for Lab Percentage. Terminating the program");  
+				               return;
+							   }
+							   
+							   double finalMark = exam * exPct / 100 + lab * lbPct /100;
+							   System.out.println( " Final mark is :" + finalMark );
+	}
+}
+
+							   
+							  
+				 
+			  
+			  
+	  
+	  
+	   
+	
